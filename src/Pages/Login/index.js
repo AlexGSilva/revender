@@ -37,7 +37,7 @@ const Login = () => {
                 <input className='input' type='password'></input>
               </div>
             </div>
-            <NavLink to='/home' className='btnforgot'>Esqueceu a Senha?</NavLink>
+            <NavLink to='/home' className='btnforgot'>Não lembra a Senha?</NavLink>
             <input type='submit' className='btn' value='Login' />
           </form>
         </div>
