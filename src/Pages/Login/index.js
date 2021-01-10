@@ -9,7 +9,7 @@ import avatar from '../../Components/Img/avatar.svg'
 
 const Login = () => {
   return(
-    <body>
+    <div>
       <img className="wave" src={wave} alt='Wave'/>
       <div className='container'>
         <div className='img'>
@@ -18,7 +18,7 @@ const Login = () => {
         <div className='login-container'>
           <form action='index.js'>
             <img className="avatar" src={avatar} alt='Avatar'/>
-            <h2>Welcome</h2>
+            <h2 className='font-div'>Welcome</h2>
             <div className='input-div one'>
               <div className='i'>
                 <i className='icon-user'><FaUserAlt/></i>
@@ -42,7 +42,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-    </body>
+    </div>
   )
 }
 
