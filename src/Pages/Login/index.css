@@ -8,6 +8,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.label {
+  font-family: 'Poppins', sans-serif;
+  color:#999;
+}
+
 .wave {
   position: fixed;
   height: 100%;
@@ -71,7 +76,7 @@ form h2 {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: #38d39f;
+  background-color: #3494d4;
   transition: 0.3s;
 }
 
@@ -83,16 +88,16 @@ form h2 {
   left: 50%;
 }
 
-.input-div.focus .i i{
-  color: #38d39f;
+.input-div.hide .i i{
+  color: #3494d4;
 }
 
-.input-div.focus div h5 {
+.input-div.hide div h5 {
   top: -5px;
   font-size: 15px;
 }
 
-.input-div.focus::after, .input-div.focus.input-div::before{
+.input-div.hide::after, .input-div.hide.input-div::before{
   width: 50%;
 }
 
@@ -167,13 +172,13 @@ form h2 {
   font-size: 1.2rem;
   outline: none;
   border: none;
-  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-image: linear-gradient(to right, #32be8f, #236896, #32be8f);
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   background-size: 200%;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .btn:hover{
