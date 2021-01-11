@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Main from "../Main/index";
 import Navbar from "../../Components/Navbar/navbar";
-import Sidebar from "../../Components/Sidebar/sidebar";
+/*import Sidebar from "../../Components/Sidebar/sidebar";*/
 import './index.css'
 
 const Home = () => {
@@ -9,9 +9,9 @@ const Home = () => {
   const openSidebar = () => {
     setsidebarOpen(true);
   };
-  const closeSidebar = () => {
+  /*const closeSidebar = () => {
     setsidebarOpen(false);
-  };
+  };*/
   return (
     <div className="container">
       <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />

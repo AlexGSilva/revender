@@ -8,7 +8,6 @@ const Main = () => {
         {/* <!-- MAIN TITLE STARTS HERE --> */}
 
         <div className="main__title">
-          <img/>
           <div className="main__greeting">
             <h1>Hello Codersbite</h1>
             <p>Welcome to your admin dashboard</p>
