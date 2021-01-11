@@ -9,20 +9,20 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
         <i className="icon-bars" aria-hidden="true"><FaBars /></i>
       </div>
       <div className="navbar__left">
-        <a href="#">Subscribers</a>
-        <a href="#">Video Management</a>
-        <a className="active_link" href="#">
+        <a href="/page404">Subscribers</a>
+        <a href="/page404">Video Management</a>
+        <a className="active_link" href="/page404">
           Admin
         </a>
       </div>
       <div className="navbar__right">
-        <a href="#">
+        <a href="/page404">
           <i className="icon-search" aria-hidden="true"><FaSearch /></i>
         </a>
-        <a href="#">
+        <a href="/page404">
           <i className="icom-clock" aria-hidden="true"><FaRegClock /></i>
         </a>
-        <a href="#!">
+        <a href="/page404">
           <img width="30" src={avatar} alt="avatar" />
         </a>
       </div>
