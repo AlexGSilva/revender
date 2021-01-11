@@ -8,7 +8,7 @@ import logo from '../../Components/Img/logo.svg'
 import avatar from '../../Components/Img/avatar.svg'
 
 
-class Home extends Component {
+class Login extends Component {
   state = {
     value: "",
     hide: false,
@@ -65,8 +65,8 @@ class Home extends Component {
                   ></input>
                 </div>
               </div>
-              <NavLink to='/home' className='btnforgot'>Não lembra a Senha?</NavLink>
-              <input type='submit' className='btn' value='Login' />
+              <NavLink to='/page404' className='btnforgot'>Não lembra a Senha?</NavLink>
+              <NavLink to='/home' type='submit' className='btn'>Login</NavLink>
             </form>
           </div>
         </div>
@@ -75,4 +75,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Login;
