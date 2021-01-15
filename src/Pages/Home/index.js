@@ -1,9 +1,13 @@
 import React from 'react';
-import './index.css'
+import './index.css';
+import Sidebar from '../../Components/Sidebar/sidebar';
 
 const Home = () => {
   return (
-    <h1>Teste</h1>
+    <>
+      <Sidebar />
+      <h1>Teste</h1>
+    </>
   );
 };
 
