@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './sidebar.css'
-import {FaBars, FaUserCircle, FaLayerGroup, FaAmazon} from 'react-icons/fa'
+import {FaBars, FaTruck, FaUserCircle, FaSignOutAlt, FaPortrait, FaLayerGroup, FaChartLine, FaDollarSign, FaFolderOpen, FaKey} from 'react-icons/fa'
 
 class Sidebar extends Component {
   handleClick = (toggleId, navId, bodyId, headerId ) => {
@@ -15,12 +15,22 @@ class Sidebar extends Component {
         nav.classList.toggle('show')
         /* TODO Aprender a trocar o icone */
         /* toggle.classList.toggle('bx-x') */
-        console.log (toggle.title)
         bodypd.classList.toggle('body-pd')
         headerpd.classList.toggle('body-pd')
       }
     } 
     showNavBar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+    const linkColor = document.querySelectorAll('.nav__link')
+
+    function colorLink() {
+      if(linkColor){
+        linkColor.forEach(l => l.classList.remove('active'))
+        console.log(this)
+        this.classList.add('active')
+      }
+    }
+    linkColor.forEach(l => l.addEventListener('click',colorLink))
   }
 
   render(){
@@ -39,46 +49,46 @@ class Sidebar extends Component {
         <div className='l-navbar' id='nav-bar'>
           <nav className="nav">
             <div>
-              <a href='/page404' className='nav__logo'>
+              <a href='/home' className='nav__logo'>
                 <i className='nav__logo-icon'><FaLayerGroup />
                 </i>
                 <span className='nav__logo-name'>Gráfica Revender</span>
               </a>
   
-              <div className='nav__list'>
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
+              <div className='nav__list active'>
+                <a href='/dash' className='nav__link'>
+                  <i className='nav__icon'><FaChartLine /></i>
                   <span className='nav__name'>Dashboard</span>
                 </a>
   
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
-                  <span className='nav__name'>Users</span>
+                <a href='/ped' className='nav__link'>
+                  <i className='nav__icon'><FaFolderOpen /></i>
+                  <span className='nav__name'>Pedido</span>
                 </a>
   
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
-                  <span className='nav__name'>Messages</span>
+                <a href='/cli' className='nav__link'>
+                  <i className='nav__icon'><FaPortrait /></i>
+                  <span className='nav__name'>Cliente</span>
                 </a>
   
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
-                  <span className='nav__name'>Favorites</span>
+                <a href='/fin' className='nav__link'>
+                  <i className='nav__icon'><FaDollarSign /></i>
+                  <span className='nav__name'>Financeiro</span>
                 </a>
   
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
-                  <span className='nav__name'>Data</span>
+                <a href='/ent' className='nav__link'>
+                  <i className='nav__icon'><FaTruck /></i>
+                  <span className='nav__name'>Entrega</span>
                 </a>
   
-                <a href='/page404' className='nav__link'>
-                  <i className='nav__icon'><FaAmazon /></i>
-                  <span className='nav__name'>Analytics</span>
+                <a href='/adm' className='nav__link'>
+                  <i className='nav__icon'><FaKey /></i>
+                  <span className='nav__name'>Admin</span>
                 </a>
               </div>
             </div>
             <a href='/page404' className='nav__link'>
-              <i className='nav__icon'><FaAmazon /></i>
+              <i className='nav__icon'><FaSignOutAlt /></i>
               <span className='nav__name'>Log Out</span>
             </a>
           </nav>
