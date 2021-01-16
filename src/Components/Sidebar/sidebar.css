@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
 :root {
   --header-height: 3rem;
   --nav-width: 68px;
@@ -66,8 +68,8 @@ a{
 .l-navbar {
   position: fixed;
   top: 0;
-  left: 0%;
-  width: calc(var(--nav-width) + 156px);
+  left: -30%;
+  width: var(--nav-width);
   height: 100vh;
   background-color: var(--first-color);
   padding: 0.5rem 1rem 0 0;
@@ -121,4 +123,8 @@ a{
 
 .show {
   left: 0;
+}
+
+.body-pd {
+  padding-left: calc(var(--nav-width) + 1rem);
 }
