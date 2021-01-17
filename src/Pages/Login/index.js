@@ -32,7 +32,7 @@ class Login extends Component {
           <img className="logo" src={logo} alt='Logo'/>
           </div>
           <div className='login-container'>
-            <form action='index.js'>
+            <form className='formLogin' action='index.js'>
               <img className="avatar" src={avatar} alt='Avatar'/>
               <h2 className='font-div'>Bem vindo!</h2>
               <div className={`input-div one ${hideLabelone ? "hide" : ""}`}>

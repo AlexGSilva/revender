@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './sidebar.css'
 import {FaBars, FaTruck, FaUserCircle, FaSignOutAlt, FaPortrait, FaLayerGroup, FaChartLine, FaDollarSign, FaFolderOpen, FaKey} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 
 class Sidebar extends Component {
   handleClick = (toggleId, navId, bodyId, headerId ) => {
@@ -49,48 +50,48 @@ class Sidebar extends Component {
         <div className='l-navbar' id='nav-bar'>
           <nav className="nav">
             <div>
-              <a href='/home' className='nav__logo'>
+              <Link to='/home' className='nav__logo'>
                 <i className='nav__logo-icon'><FaLayerGroup />
                 </i>
                 <span className='nav__logo-name'>Gráfica Revender</span>
-              </a>
+              </Link>
   
               <div className='nav__list active'>
-                <a href='/dash' className='nav__link'>
+                <Link to='/dash' className='nav__link'>
                   <i className='nav__icon'><FaChartLine /></i>
                   <span className='nav__name'>Dashboard</span>
-                </a>
+                </Link>
   
-                <a href='/ped' className='nav__link'>
+                <Link to='/ped' className='nav__link'>
                   <i className='nav__icon'><FaFolderOpen /></i>
                   <span className='nav__name'>Pedido</span>
-                </a>
+                </Link>
   
-                <a href='/cli' className='nav__link'>
+                <Link to='/cli' className='nav__link'>
                   <i className='nav__icon'><FaPortrait /></i>
                   <span className='nav__name'>Cliente</span>
-                </a>
+                </Link>
   
-                <a href='/fin' className='nav__link'>
+                <Link to='/fin' className='nav__link'>
                   <i className='nav__icon'><FaDollarSign /></i>
                   <span className='nav__name'>Financeiro</span>
-                </a>
+                </Link>
   
-                <a href='/ent' className='nav__link'>
+                <Link to='/ent' className='nav__link'>
                   <i className='nav__icon'><FaTruck /></i>
                   <span className='nav__name'>Entrega</span>
-                </a>
+                </Link>
   
-                <a href='/adm' className='nav__link'>
+                <Link to='/adm' className='nav__link'>
                   <i className='nav__icon'><FaKey /></i>
                   <span className='nav__name'>Admin</span>
-                </a>
+                </Link>
               </div>
             </div>
-            <a href='/page404' className='nav__link'>
+            <Link to='/page404' className='nav__link'>
               <i className='nav__icon'><FaSignOutAlt /></i>
               <span className='nav__name'>Log Out</span>
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

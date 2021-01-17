@@ -1,6 +1,53 @@
-.te{
+.bodyCliente{
   position: relative;
-  top: 4rem;
   padding-left: calc(var(--nav-width) + 1rem);
+  top: 4rem;
   color: blue;
+  font-family: 'Poppins', sans-serif;
 }
+
+.cliente__container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.cliente-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.inputCliente {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.inputCliente::after, .inputCliente::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #3494d4;
+  transition: 0.3s;
+}
+
+.inputCliente > h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: .3s;
+}
+
